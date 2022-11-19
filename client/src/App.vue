@@ -6,10 +6,11 @@
 
 <script>
 import appBody from "@/components/Body";
+
 export default {
   name: 'App',
   components: {
-    appBody:appBody,
+    appBody: appBody,
   }
 }
 </script>

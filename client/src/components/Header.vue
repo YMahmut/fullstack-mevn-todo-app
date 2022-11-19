@@ -10,31 +10,34 @@
 <script>
 export default {
   name: "appHeader",
-  data(){
-    return{
-      show:true,
-      interval:null,
+  data() {
+    return {
+      show: true,
+      interval: null,
     }
   },
-  mounted(){
-    this.show=false;
+  mounted() {
+    this.show = false;
   },
 
 }
 </script>
 
 <style scoped>
-#header{
+#header {
   text-align: center;
   justify-content: center;
   align-items: center;
 }
+
 .bounce-enter-active {
   animation: bounce-in 1s reverse;
 }
+
 .bounce-leave-active {
   animation: bounce-out 1s;
 }
+
 @keyframes bounce-in {
   0% {
     transform: scale(0);

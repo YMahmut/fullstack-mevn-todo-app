@@ -19,8 +19,6 @@ export default {
 
 <style scoped>
 #card-body{
-
-
   background-color: #d9bcbc;
   border-radius: 5px;
   display: flex;

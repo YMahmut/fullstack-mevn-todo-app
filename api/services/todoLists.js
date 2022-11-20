@@ -1,5 +1,13 @@
 const Router = require('express');
-const TodoList = require("../models/TodoList");
+//const TodoList = require("../models/TodoList");
+const {Schema, model}=require('mongoose');
+
+const TodoListSchema=new Schema({
+    description:{type:String, require:true},
+    completed:{type:Boolean,default: false}
+});
+
+const TodoList=model('todoList',TodoListSchema);
 
 const router = Router();
 router.get('/', async (req, res) => {

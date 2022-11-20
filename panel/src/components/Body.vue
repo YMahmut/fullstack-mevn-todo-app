@@ -1,18 +1,16 @@
 <template>
   <div id="card-body">
-    <appHeader/>
     <Todo/>
   </div>
 </template>
 
 <script>
-import appHeader from "./Header"
 import ToDo from "./Todo";
 
 export default {
   name: "appBody",
   components: {
-    appHeader: appHeader,
+
     Todo: ToDo,
   }
 }
@@ -21,7 +19,7 @@ export default {
 <style scoped>
 #card-body {
   background-color: #d9bcbc;
-  border-radius: 5px;
+  border-radius:0 0 5px 5px;
   display: flex;
   flex-direction: column;
   text-align: center;

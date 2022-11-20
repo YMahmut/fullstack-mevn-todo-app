@@ -11,7 +11,7 @@
       <div class="col">
         <TransitionGroup name="list" tag="ul">
           <li class="m-2 p-2" v-for="(todo,index) in todos" :key="todo._id">
-            <div class="col-8">
+            <div class="col-9">
                 <span v-if="isEditMode && index === selectedEditItemIndex" class="col-md todos">
                   <input class="todo-edit-input" type="text" v-model="selectedEditItem"
                          @keypress.enter="EditTodo(todo, index)"/>
@@ -22,7 +22,7 @@
                     class="col-md todos">{{ todo.description }}
                 </span>
             </div>
-            <div class="col-4">
+            <div class="col-3" style="margin-left: -18px">
                 <span>
                   <button v-if="!isEditMode" :style="todo.completed ? {border:'3px solid green'} : {color:''}"
                           class="col-xs m-2 p-2 del-button" @click="DeleteTodo(todo)">Delete</button>
@@ -163,6 +163,7 @@ li {
   position: relative;
   width: 87%;
   user-select: none;
+  word-break: break-all;
 }
 
 .del-button, .edit-button {

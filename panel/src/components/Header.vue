@@ -1,5 +1,5 @@
 <template>
-  <div id="header" class="m-2 p-2">
+  <div id="header" class="m-0 p-2">
     <Transition name="bounce">
       <h1 v-if="!show">My Todo App</h1>
     </Transition>
@@ -28,6 +28,7 @@ export default {
   text-align: center;
   justify-content: center;
   align-items: center;
+  background-color: #d9bcbc;
 }
 
 .bounce-enter-active {

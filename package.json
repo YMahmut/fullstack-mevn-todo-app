@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "server": "nodemon server.js --ignore 'client/'",
-    "client": "npm run serve --prefix client",
+    "server": "nodemon server.js --ignore 'panel/'",
+    "client": "npm run serve --prefix panel",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {

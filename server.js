@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const cors = require('cors');
 const morgan=require('morgan');
 const bodyParser=require('body-parser');
-const todoListItemsRoutes=require('./routes/api/todoLists')
+const todoListItemsRoutes=require('./api/services/todoLists')
 
 app.use(cors());
 app.use(morgan('tiny'));
